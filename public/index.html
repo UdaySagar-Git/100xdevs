@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="client.js"></script>
+
+    <div class="todo-div">
+
+    <label for="title">Title :</label>
+    <input type="text" id="title">
+
+    <br><br>
+
+    <label for="description">description :</label>
+    <input type="text" id="description">
+
+    <button onclick="sendtodo()" id="send">submit</button>
+    </div>
+    
+    <div onclick="deleteall()" id="delall">
+        <button> Delete All </button>
+    </div>
+    <div  class="todo-div2">
+        <div class="child">
+            <span class="tit-todo">title</span>
+            <br>
+            <span class="dis-todo">description</span>
+            <br>
+            <button class="edit-todo" >Edit</button>
+            <button onclick="deltodo()" class="del-todo" >Delete</button>
+        </div>
+    </div>
+
+    <script>Alltodoonload()</script>
+
+</body>
+</html>
